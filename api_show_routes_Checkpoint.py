@@ -34,7 +34,7 @@ sid = login(utenza,secret)
 #-----------------------------------------------------------------------------------------------------
 #Estrazione delle rotte (JSON)
 static_route_result = api_call(ip, porta, 'show-static-routes', {"limit":200, "offset":0, "order": "DESC"}, sid) #se il firewall interrogato ha più di 200 rotte allora va ripetuto più volte alzando l'offset
-JRoute = json.dumps(static_route_result))
+JRoute = json.dumps(static_route_result)
 #-----------------------------------------------------------------------------------------------------
 #Logout
 logout_result = api_call(ip, porta, 'logout', {}, sid)
