@@ -1,3 +1,8 @@
+"""
+questo script è il terzo passaggio, qui si confrontano i due file CSV contenenti i gateway e i tunnel attivi, se vi sono delle differenze
+qui verranno elencate a schermo e a scelta dell'utente si potranno riavviare tutti o solo alcuni gateway, nel passaggio successivo verrà chiesta
+la stessa cosa per i tunnel
+"""
 import pandas as pd
 import requests
 import time
